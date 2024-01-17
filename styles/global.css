@@ -1,0 +1,92 @@
+:root {
+    --bg-color: #FBFBFB;
+    --primary-color: #141313;
+    --secondary-color: #A8A8A8;
+    --accent-color: #2D2D2D;
+
+    --text-color: #141313;
+    --text-color-white: #FBFBFB;
+
+    --body-font-family: 'Poppins', sans-serif;
+    --heading-font-family: 'Bebas Neue', sans-serif;
+    --logo-font-family: 'Kolker Brush', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--body-font-family);
+    background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font-family);
+}
+
+
+/* ======================= Global header styles =======================*/
+
+header {
+    .navbar-toggler {
+        display: none;
+        padding: 4px 8px;
+    }
+
+    .bg-menu {
+        background-color: var(--accent-color);
+        opacity: 0.9;
+        border-bottom: 2px solid var(--accent-color);
+
+        a {
+            color: var(--text-color-white);
+            font-weight: 600;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+
+            &.outlined-button:hover {
+                color: var(--text-color);
+            }
+        }
+
+        img {
+            width: 3rem;
+        }
+
+        .container-fluid {
+            max-width: 1200px;
+
+            .btn a {
+                color: var(--text-color) !important;
+            }
+        }
+
+        .navbar-toggler-icon {
+            color: black !important;
+        }
+
+        .bg-off-canvas {
+            background-color: var(--text-color) !important;
+        }
+    }
+}
+
+@media(max-width: 530px) {
+    header {
+        .link-header {
+            display: none;
+        }
+
+        .navbar-toggler {
+            display: block;
+        }
+    }
+}
