@@ -1,3 +1,5 @@
+@import url(../styles/global.css);
+
 .links {
     display: flex;
     justify-content: space-between;
@@ -13,6 +15,10 @@ a {
     align-items: center;
 }
 
+.bg-menu {
+    padding-top: 0;
+}
+
 .login-content {
     display: flex;
 }
@@ -24,6 +30,7 @@ a {
 .login-form {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     width: 55%;
 }
 
@@ -32,6 +39,7 @@ a {
     width: 100%;
     border: none;
     background-color: #ecf0f1;
+    padding: 1.2rem 0.8rem;
 }
 
 .login-label {
@@ -52,6 +60,7 @@ a {
 }
 
 @media screen and (max-width: 740px) {
+
     .login-content,
     .second-content {
         flex-direction: column;
@@ -61,6 +70,7 @@ a {
     .login-form {
         width: 90%;
     }
+
     a {
         font-size: 12px;
     }
