@@ -1,0 +1,392 @@
+.banner-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0;
+
+    &>img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        position: absolute;
+    }
+
+    h1 {
+        font-size: 13vw;
+        font-family: var(--logo-font-family);
+        color: var(--text-color-white);
+        transform: rotate(-8deg);
+        margin-inline-start: 10%;
+    }
+
+    a {
+        padding: 0.7rem 1rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: var(--text-color-white);
+        border: 2px solid var(--text-color-white);
+        border-radius: 8px;
+        margin-inline-start: 12%;
+
+        img {
+            width: 1.7rem;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+/* ============================== White section ===================================*/
+.white-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.white-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 95vh;
+    width: 100%;
+    gap: 2rem;
+    padding: 0;
+
+    .text-container {
+        max-width: 700px;
+        margin-left: 10rem;
+
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    .car-container {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: fit-content;
+        width: 50rem;
+        position: relative;
+        padding-left: 5rem;
+
+        .background {
+            display: flex;
+            align-items: end;
+            justify-content: start;
+
+            height: 30rem;
+            width: 45rem;
+
+            background-image: url("../assets/bg01.webp");
+            background-color: var(--primary-color);
+
+            border-top-left-radius: 55px;
+            border-bottom-left-radius: 55px;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .car {
+            position: absolute;
+            bottom: 2rem;
+            left: 0;
+        }
+    }
+}
+
+.white-section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 95vh;
+    width: 100%;
+    gap: 2rem;
+    padding: 0;
+
+    .text-container {
+        max-width: 700px;
+        margin-right: 10rem;
+
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    .car-container {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: fit-content;
+        width: 50rem;
+        position: relative;
+        padding-right: 5rem;
+
+        .background {
+            display: flex;
+            align-items: end;
+            justify-content: start;
+
+            height: 30rem;
+            width: 45rem;
+
+            background-image: url("../assets/bg02.webp");
+            background-color: var(--primary-color);
+
+            border-top-right-radius: 55px;
+            border-bottom-right-radius: 55px;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .car {
+            position: absolute;
+            bottom: 0;
+            right: 7rem;
+        }
+    }
+}
+
+/* ============================== Black section ===================================*/
+.black-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color-white);
+}
+
+.black-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 95vh;
+    width: 100%;
+    gap: 2rem;
+    padding: 0;
+
+    .text-container {
+        max-width: 700px;
+        margin-left: 10rem;
+
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    .car-container {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: fit-content;
+        width: 50rem;
+        position: relative;
+        padding-left: 5rem;
+
+        .background {
+            display: flex;
+            align-items: end;
+            justify-content: start;
+
+            height: 30rem;
+            width: 45rem;
+
+            background-image: url("../assets/bg01.webp");
+            background-color: var(--bg-color);
+
+            border-top-left-radius: 55px;
+            border-bottom-left-radius: 55px;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .car {
+            position: absolute;
+            bottom: 2rem;
+            left: 3.2rem;
+        }
+    }
+}
+
+.black-section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 95vh;
+    width: 100%;
+    gap: 2rem;
+    padding: 0;
+
+    .text-container {
+        max-width: 700px;
+        margin-right: 10rem;
+
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    .car-container {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: fit-content;
+        width: 50rem;
+        position: relative;
+        padding-right: 5rem;
+
+        .background {
+            display: flex;
+            align-items: end;
+            justify-content: start;
+
+            height: 30rem;
+            width: 45rem;
+
+            background-image: url("../assets/bg02.webp");
+            background-color: var(--bg-color);
+
+            border-top-right-radius: 55px;
+            border-bottom-right-radius: 55px;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .car {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+/* ============================== Responsiveness ===================================*/
+@media (max-width: 1200px) {
+    .banner-section {
+        h1 {
+            font-size: 16vw;
+        }
+
+        a {
+            padding: 1% 1.5%;
+            font-size: 2vw;
+
+            img {
+                width: 2.5vw;
+                margin-left: 1vw;
+            }
+        }
+    }
+
+    .white-section,
+    .black-section {
+        padding-block: 6rem 0;
+        gap: 6rem;
+    }
+
+    .white-section-1,
+    .black-section-1 {
+        height: fit-content;
+        flex-direction: column-reverse;
+        align-items: end;
+        gap: 5rem;
+
+        .text-container {
+            max-width: 80%;
+            margin-left: 3rem;
+            align-self: flex-start;
+
+            h3 {
+                font-size: 2.1rem;
+            }
+
+            p {
+                font-size: 1.4rem
+            }
+        }
+
+        .car-container {
+            width: 45rem;
+
+            .background {
+                height: 25rem;
+                width: 40rem;
+            }
+
+            .car {
+                width: 30rem;
+            }
+        }
+    }
+
+    .white-section-2,
+    .black-section-2 {
+        height: fit-content;
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 5rem;
+
+        .text-container {
+            max-width: 80%;
+            margin-left: 3rem;
+            align-self: flex-start;
+
+            h3 {
+                font-size: 2.1rem;
+            }
+
+            p {
+                font-size: 1.4rem
+            }
+        }
+
+        .car-container {
+            width: 45rem;
+
+            .background {
+                height: 25rem;
+                width: 40rem;
+            }
+
+            .car {
+                width: 30rem;
+            }
+        }
+    }
+}
