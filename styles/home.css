@@ -1,0 +1,71 @@
+@import url('../styles/global.css');
+
+.home{
+    min-height: 50vh;
+    background-color: var(--background-blue);
+    background-position: center;
+    justify-content: center;
+}
+
+.content-home{
+    max-width: 30rem;
+  
+}
+
+.home .content-home h1{
+   font-size: 2rem;
+   color: var(--text-color-white);
+}
+
+
+.menu-car .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding: 3rem;
+}
+
+.menu-car .box-container .box{
+    padding: 2rem;
+    text-align: center;
+    border: var(--secondary-color);
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+}
+
+.menu-car .box-container .box img{
+    height: 13rem;
+}
+
+.menu-car .box-container .box h3{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+.menu-car .box-container .box h3 span{
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    margin-left: 1rem;
+    
+}
+
+
+.menu-car .box-container .box .price{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.btn-custom-menu{
+    margin-top:  1rem;
+    display: inline-block;
+    padding: 1rem 1rem;
+    background: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+    color:var(--bg-color);
+    border-radius: 8px;
+}
