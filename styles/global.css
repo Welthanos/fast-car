@@ -38,6 +38,10 @@ header {
         padding: 4px 8px;
     }
 
+    nav#navBar {
+        border-bottom: solid 3px #575757;
+    }
+
     .bg-menu {
         background-color: var(--accent-color);
         border-bottom: 2px solid var(--accent-color);
@@ -77,6 +81,37 @@ header {
     }
 }
 
+/* ======================= Global footer styles =======================*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #282828;
+    padding-block: 1.5rem;
+    border-top: 3px solid var(--accent-color);
+
+    img {
+        height: 6rem;
+    }
+
+    ul {
+        margin: 0;
+        list-style: none;
+
+        li a {
+            font-size: 1.5rem;
+            font-family: var(--heading-font-family);
+            color: var(--text-color-white);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+/* ======================= Responsiveness =======================*/
 @media(max-width: 530px) {
     header {
         .link-header {
