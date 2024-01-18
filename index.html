@@ -12,19 +12,130 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kolker+Brush&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/index.css">
-    <script src="/index.js" defer></script>
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 
     <title>FastCar</title>
 </head>
 
 <body>
+    <div class="page-container" data-bs-spy="scroll" data-bs-target="navBar" tabindex="0">
+        <header>
+            <nav id="navBar" class="navbar fixed-top bg-menu" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a href="./index.html#" class="navbar-brand custom-brand-nav"><img src="./assets/logo.svg" alt="Logomarca da FastCar, formada pelas letras F e C"></a>
+                    <div>
+                        <a href="#merchan" class="btn link-header" aria-label="Link que redireciona para o conteúdo geral da página">Explore</a>
+                        <a href="./pages/login.html" class="btn link-header" aria-label="Link que redireciona para a página de login">Login</a>
+                        <a href="./pages/register.html" class="btn btn-outline-light link-header outlined-button" aria-label="Link que redireciona para a página de cadastro">Cadastre-se</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end bg-off-canvas" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Explore</a>
+                                <a href="./pages/login.html" class="nav-link active">Login</a>
+                                <a href="./pages/register.html" class="nav-link active">Cadastre-se</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
     <main>
-        <section>
+        <section class="container-fluid banner-section">
+            <img src="./assets/banner-g.webp"
+                srcset="./assets/banner-p.webp 720w, ./assets/banner-m.webp 1460w, ./assets/banner-g.webp 2180w"
+                alt="Imagem com um fundo preto que contém um carro, também da cor preta, em seu lado direito">
+            <h1>FastCar</h1>
+            <a href="./pages/login.html">Conferir ofertas <img src="./assets/arrow-right.svg" alt="Seta direcionada para a direita"></a>
+        </section>
+
+        <section class="container-fluid white-section" id="merchan">
+            <div class="white-section-1">
+                <div class="text-container">
+                    <h3>Aventura com estilo</h3>
+                    <p>Aventure-se com estilo ao escolher um dos nossos veículos esportivos e ágeis. Seja você um
+                        entusiasta
+                        de carros esportivos ou esteja em busca de adrenalina nas estradas, nossa seleção cuidadosamente
+                        escolhida oferece uma fusão emocionante de design arrojado e desempenho excepcional.
+                    </p>
+                </div>
+                <div class="car-container">
+                    <img class="car" src="./assets/car02.webp" alt="Imagem de um carro em um fundo preto">
+                    <div class="background"> </div>
+                </div>
+            </div>
+            <div class="white-section-2">
+                <div class="text-container">
+                    <h3>Descubra a elegância</h3>
+                    <p>Explore nossa seleção exclusiva de veículos que combinam desempenho excepcional com design
+                        refinado. Cada carro é uma expressão de luxo e estilo, pronto para elevar sua experiência de
+                        viagem a novos patamares. Deixe-se levar pela sofisticação, com um preço que cabe em seu bolso.
+                    </p>
+                </div>
+                <div class="car-container">
+                    <img class="car" src="./assets/car04.webp" alt="Imagem de um carro em um fundo preto">
+                    <div class="background"> </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid black-section">
+            <div class="black-section-1">
+                <div class="text-container">
+                    <h3>Luxo sem medida</h3>
+                    <p>Experimente o luxo personalizado com nossa linha premium. Cada detalhe, desde
+                        o interior exuberante até a tecnologia de ponta, foi projetado para proporcionar
+                        uma experiência única. Envolva-se no conforto e no requinte enquanto viaja com estilo.
+                    </p>
+                </div>
+                <div class="car-container">
+                    <img class="car" src="./assets/car05.webp" alt="Imagem de um carro em um fundo branco">
+                    <div class="background"> </div>
+                </div>
+            </div>
+            <div class="black-section-2">
+                <div class="text-container">
+                    <h3>Performance Excepciona</h3>
+                    <p>Descubra o equilíbrio perfeito entre potência e elegância. Nossos veículos
+                        de alto desempenho oferecem uma experiência de condução inigualável. Deixe-se
+                        levar pela emoção da estrada com tecnologia avançada e design dinâmico.
+                    </p>
+                </div>
+                <div class="car-container">
+                    <img class="car" src="./assets/car06.webp" alt="Imagem de um carro em um fundo branco">
+                    <div class="background"> </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <img src="./assets/logo.svg" alt="Logomarca da FastCar, formada pelas letras F e C">
+        <ul>
+            <li><a href="#">Como funciona</a></li>
+            <li><a href="#">Destaques</a></li>
+            <li><a href="#">Parcerias</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Anuncie conosco</a></li>
+        </ul>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 

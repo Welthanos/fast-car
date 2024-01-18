@@ -1,0 +1,196 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "typicode",
+      "email": "typicode@example.com",
+      "password": "senha123"
+    },
+    {
+      "id": "e735",
+      "username": "analu",
+      "email": "analu",
+      "password": "123123"
+    },
+    {
+      "id": "5aa2",
+      "username": "jjj",
+      "email": "Jainer469@gmail.com",
+      "password": "00"
+    },
+    {
+      "id": "aad6",
+      "username": "jjj",
+      "email": "Jainer469@gmail.com",
+      "password": "222"
+    },
+    {
+      "id": "f01c",
+      "username": "jjj",
+      "email": "Jainer469@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "1fbb",
+      "username": "welton",
+      "email": "weltonsts15@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "5f6a",
+      "username": "welton",
+      "email": "weltonsts15@gmail.com",
+      "password": "3412342342"
+    },
+    {
+      "id": "7c7a",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "7664",
+      "username": "welton",
+      "email": "weltonsts15@gmail.com",
+      "password": "3141321"
+    },
+    {
+      "id": "a896",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "362d",
+      "username": "welton",
+      "email": "weltonsts15@gmail.com",
+      "password": "sfgsfgsdf"
+    },
+    {
+      "id": "aec8",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "bdfb",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "165f",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "4b1a",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "0480",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "ede0",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "74f0",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "b411",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "e6ff",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "5f64",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "5b09",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "8f70",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "835b",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "d472",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "be17",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "0e6b",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "6e2f",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "ddfa",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "1776",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "21ab",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "27bd",
+      "username": "",
+      "email": "",
+      "password": ""
+    }
+  ]
+}
