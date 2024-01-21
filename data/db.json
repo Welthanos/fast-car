@@ -191,6 +191,18 @@
       "username": "",
       "email": "",
       "password": ""
+    },
+    {
+      "id": "a15e",
+      "username": "jade",
+      "email": "jade@me.com",
+      "password": "1234"
+    },
+    {
+      "id": "6295",
+      "username": "Jade",
+      "email": "jade@gmail.com",
+      "password": "345"
     }
   ]
 }
