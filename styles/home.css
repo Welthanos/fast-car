@@ -1,62 +1,110 @@
 @import url('../styles/global.css');
 
+main {
+    width: 100%;
+}
+
 .home{
+    width: 100%;
+    position: relative;
+    display: flex;
     min-height: 50vh;
-    background-color: var(--background-blue);
+    /* background-color: var(--background-blue); */
+    background-image: url('../assets/banner-g.webp');
     background-position: center;
     justify-content: center;
 }
 
-.content-home{
-    max-width: 30rem;
-  
+h1{
+    width: 50%;
+    /* margin-top: 6rem; */
+    font-size: 2rem;
+    color: var(--text-color-white);
+    text-align: start;
+    margin: 12rem auto auto 3rem;
+    font-size: 3.5rem;
+    font-family: var(--heading-font-family);
 }
 
-.home .content-home h1{
-   font-size: 2rem;
-   color: var(--text-color-white);
+.form-control-container {
+    margin: auto;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+
+    input {
+        width: 50vw;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    img {
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 3rem;
+        background-color: var(--bg-color);
+        padding: 0.4rem 0.6rem;
+    }
+
 }
 
-
-.menu-car .box-container{
+.menu-car .card-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
     padding: 3rem;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
-.menu-car .box-container .box{
-    padding: 2rem;
+.card-custom{
+    width: 100%;
+    padding: 1rem;
     text-align: center;
-    border: var(--secondary-color);
     background-color: var(--bg-color);
     border-radius: 8px;
-    border: 1px solid var(--secondary-color);
+    border: .0625rem solid rgba(0, 0, 0, 0.178);
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.11);
 }
 
-.menu-car .box-container .box img{
-    height: 13rem;
+.card-body {
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+
+    h3 {
+        text-align: start;
+        font-size: 2rem;
+        font-weight: bold;
+
+        span{
+            color: #878585;
+            margin-left: .5rem;
+            font-weight: 100;
+        }
+    }
+
+    .about-car {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: start;
+        color: #878585;
+    }
 }
 
-.menu-car .box-container .box h3{
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    padding: 1rem 0;
-}
+.location {
+    display: flex;
+    gap: 1rem;
 
-.menu-car .box-container .box h3 span{
-    color: var(--secondary-color);
-    font-size: 1.4rem;
-    padding: 1rem 0;
-    margin-left: 1rem;
-    
-}
-
-
-.menu-car .box-container .box .price{
-    color: var(--secondary-color);
-    font-size: 1.5rem;
-    padding: 1rem 0;
+    .location-card {
+        text-align: start;
+        font-size: 1.1rem;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: #878585;
+    }
 }
 
 .btn-custom-menu{
@@ -68,4 +116,29 @@
     text-decoration: none;
     color:var(--bg-color);
     border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .home {
+        background-image: url('../assets/banner-p.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .menu-car .card-container {
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card-custom{
+        width: 100%;
+        padding: 1rem;
+    }
 }
