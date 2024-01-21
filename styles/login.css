@@ -5,12 +5,15 @@ main {
     padding: 4rem;
     background-color: var(--bg-color);
     justify-content: center;
-    min-height: 110vh;
+    min-height: 100vh;
     background: linear-gradient(to top, var(--secondary-color) 15%, var(--bg-color));
 }
 
 .custom-container {
-    border-radius: 1%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     width: 50rem;
@@ -51,6 +54,8 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .form-box .logo {
@@ -83,6 +88,7 @@ form .custom-input-group {
     border: 1px solid var(--secondary-color);
     font-size: 0.8rem;
     transition: all 0.4s ease;
+    padding-inline-start: 0.7rem;
 }
 
 .custom-input-group input:focus {
@@ -95,6 +101,7 @@ form .custom-input-group {
     height: 4%;
     background-color: var(--primary-color);
     color: var(--text-color-white);
+    font-family: var(--heading-font-family);
 }
 
 .custom-input-group button:hover {
@@ -121,8 +128,12 @@ form .custom-input-group {
 }
 
 @media (max-width: 768px) {
-    main{
-        padding: 1rem 0;
+    main {
+        padding: 0;
+        background: var(--bg-color);
+    }
+    .img-box {
+        display: none;
     }
     .custom-container {
         width: 700px;
