@@ -53,9 +53,9 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">Explore</a>
-                                    <a href="./pages/login.html" class="nav-link active">Login</a>
-                                    <a href="./pages/register.html" class="nav-link active">Cadastre-se</a>
+                                    <a href="../index.html#merchan" class="nav-link active">Explore</a>
+                                    <a href="../pages/login.html" class="nav-link active">Login</a>
+                                    <a href="../pages/register.html" class="nav-link active">Cadastre-se</a>
                                 </li>
                             </ul>
                         </div>
@@ -64,25 +64,41 @@
             </header>
         </div>
 
-        <main class="container">
-            <section class="content registration-content">
-                <div class="first-column">
+        <main>
+            <section class="custom-container-register">
+                <div class="img-box">
                     <div class="background">
-                        <img class="image-container" src="../assets/car01.webp" alt="" />
+                        <img src="../assets/car03.webp" alt="" />
                     </div>
                 </div>
 
-                <div class="second-column">
+                <div class="form-box-register">
                     <img class="logo" src="../assets/logo-black.svg" alt="" srcset="" />
-
-                    <span class="description description-second">Faça seu cadastro</span>
+                    <h1>Realizar cadastro</h1>
 
                     <form class="registration-form" onsubmit="userRegister(event)">
-                        <label class="registration-label" for="newUsername"> <input type="text" placeholder="Name" id="newUsername" /> </label>
-                        <label class="registration-label" for="newEmail"><input type="email" placeholder="Email" id="newEmail" /></label>
-                        <label class="registration-label" for="newPassword"> <input type="password" placeholder="Password" id="newPassword" /></label>
-                        <button class="btn btn-second custom-button" type="submit">Cadastrar</button>
-                        <a href="../pages/login.html">Ja possui uma conta? faça login</a>
+                        <div class="custom-input-group">
+                            <label for="newUsername"> </label>
+                            <input type="text" placeholder="Name" id="newUsername" />
+                        </div>
+
+                        <div class="custom-input-group">
+                            <label for="newEmail"></label>
+                            <input type="email" placeholder="Email" id="newEmail" />
+                        </div>
+
+                        <div class="custom-input-group">
+                            <label for="newPassword"> </label>
+                            <input type="password" placeholder="Password" id="newPassword" />
+                        </div>
+
+                        <div class="custom-input-group">
+                            <button class="btn btn-second custom-button" type="submit">Cadastrar</button>
+                        </div>
+
+                        <div class="links">
+                            <a class="link" href="../pages/login.html">Já possui uma conta? Entrar</a>
+                        </div>
                     </form>
                 </div>
             </section>

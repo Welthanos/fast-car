@@ -1,30 +1,32 @@
 <html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="FastCar, carros, veículos, automóveis, aluguel, locadora, usados, semi-novos" />
+        <meta name="description" content="FastCar - Alugue automóveis de qualidade com rapidez." />
+        <meta name="author" content="Welton Santos, Jaíne Rodrigues, Matheus Medeiros" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="FastCar, carros, veículos, automóveis, aluguel, locadora, usados, semi-novos">
-    <meta name="description" content="FastCar - Alugue automóveis de qualidade com rapidez.">
-    <meta name="author" content="Welton Santos, Jaíne Rodrigues, Matheus Medeiros">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kolker+Brush&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="icon" type="image/svg+xml" href="../assets/logo.svg" />
+        <link rel="stylesheet" href="./styles/global.css" />
+        <link rel="stylesheet" href="../styles/login.css" />
+        <script src="../scripts/index.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kolker+Brush&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="../styles/login.css" />
-    <link rel="stylesheet" href="../styles/register.css" />
-    <script src="../scripts/index.js" defer></script>
-
-    <title>FastCar - login</title>
-
+        <title>FastCar - login</title>
     </head>
     <body>
         <div class="page-container" data-bs-spy="scroll" data-bs-target="navBar" tabindex="0">
             <header>
                 <nav id="navBar" class="navbar fixed-top bg-menu" data-bs-theme="dark">
-                    <div class="container-fluid ">
+                    <div class="container-fluid">
                         <a href="../index.html" class="navbar-brand custom-brand-nav"><img src="../assets/logo.svg" alt="Logomarca da FastCar, formada pelas letras F e C" /></a>
                         <div>
                             <a href="../index.html#merchan" class="btn link-header" aria-label="Link que redireciona para o conteúdo geral da página">Explore</a>
@@ -49,7 +51,7 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">Explore</a>
+                                    <a href="../index.html#merchan" class="nav-link active">Explore</a>
                                     <a href="../pages/login.html" class="nav-link active">Login</a>
                                     <a href="../pages/register.html" class="nav-link active">Cadastre-se</a>
                                 </li>
@@ -60,29 +62,45 @@
             </header>
         </div>
 
-        <main class="container">
-            <section class="content login-content">
-                <div class="first-column">
-                    <img class="image-container" src="../assets/car03.webp" alt="" />
+        <main>
+            <section class="custom-container">
+                <div class="img-box">
+                    <div class="background">
+                        <img src="../assets/car01.webp" alt="" />
+                    </div>
                 </div>
 
-                <div class="second-column">
+                <div class="form-box">
                     <img class="logo" src="../assets/logo-black.svg" alt="" srcset="" />
+                    <h1>Acessar sua conta</h1>
 
-                    <p class="description description-second">Acesse sua conta</p>
-                    <form class="login-form">
-                        <label class="login-label" for="username"> <input type="text" placeholder="Usuário" id="username" /> </label>
-                        <label class="login-label" for="password"> <input type="password" placeholder="Password" id="password" /> </label>
+                    <form class="form-login" action="#">
+                        <div class="custom-input-group">
+                            <label for="username"></label>
+                            <input type="text" placeholder="Usuário" id="username" required="required" />
+                        </div>
 
-                        <button class="btn btn-second btn-custom" onclick="login()">Entrar</button>
+                        <div class="custom-input-group">
+                            <label for="password"> </label>
+                            <input type="password" placeholder="Password" id="password" required="required" />
+                        </div>
+
+                        <div class="custom-input-group">
+                            <button class="btn btn-second btn-custom" onclick="login()">Entrar</button>
+                        </div>
+
                         <div class="links">
-                            <a href="#">Recuperar senha</a>
-                            <a href="../pages/register.html">Não possui uma conta? Cadastre-se</a>
+                            <a class="link" href="#">Recuperar senha</a>
+                            <a class="link" href="../pages/register.html">Não possui uma conta? Cadastre-se</a>
                         </div>
                     </form>
                 </div>
             </section>
         </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
