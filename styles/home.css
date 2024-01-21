@@ -21,7 +21,7 @@ h1{
     font-size: 2rem;
     color: var(--text-color-white);
     text-align: start;
-    margin: 12rem auto auto 3rem;
+    margin: 10rem auto auto 3rem;
     font-size: 3.5rem;
     font-family: var(--heading-font-family);
 }
@@ -120,7 +120,7 @@ h1{
     font-weight: bold;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     .home {
         background-image: url('../assets/banner-p.webp');
         background-size: cover;
