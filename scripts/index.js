@@ -49,9 +49,11 @@ async function userRegister(event) {
 
             if (response.ok) {
                 alert("Usuário cadastrado com sucesso");
+
                 setTimeout(() => {
                     window.location.href = "../pages/login.html";
-                }, 100);
+                }, 0);
+                
             } else {
                 throw new Error("Erro na solicitação");
             }
@@ -71,10 +73,11 @@ async function login() {
 
     const user = users.find((u) => u.username === username && u.password === password);
 
-    if (user) {
-        window.location.href = "../pages/home.html";
-    } else {
+    if (!user) {
         alert("Usuário ou senha inválidos");
+       
+    } else {
+        window.location.href = "../pages/home.html";
     }
 }
 
