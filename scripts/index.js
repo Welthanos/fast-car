@@ -5,6 +5,7 @@ async function userRegister(event) {
     const newEmail = document.getElementById("newEmail").value;
     const newPassword = document.getElementById("newPassword").value;
 
+    try{
     const response = await fetch("http://localhost:3000/users", {
         method: "POST",
         headers: {
@@ -15,7 +16,14 @@ async function userRegister(event) {
 
     if (response.ok) {
         alert("Usuário cadastrado com sucesso");
-    } else {
+        window.location.href = "../pages/login.html";
+
+        const users = await response.json();
+    } 
+    else{
+        throw new Error("Erro na solicitação");
+    } 
+}catch (error) {
         alert("Erro ao cadastrar usuário");
     }
 }
