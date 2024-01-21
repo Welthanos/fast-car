@@ -21,15 +21,14 @@
 </head>
 
 <body>
-    <div class="page-container" data-bs-spy="scroll" data-bs-target="navBar" tabindex="0">
+    <div class="page-container page-custom" data-bs-spy="scroll" data-bs-target="navBar" tabindex="0">
         <header>
             <nav id="navBar" class="navbar fixed-top bg-menu" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a href="../index.html" class="navbar-brand custom-brand-nav"><img src="../assets/logo.svg" alt="Logomarca da FastCar, formada pelas letras F e C"></a>
                     <div>
-                        <a href="../index.html#merchan" class="btn link-header" aria-label="Link que redireciona para o conteúdo geral da página">Explore</a>
-                        <a href="../pages/login.html" class="btn link-header" aria-label="Link que redireciona para a página de login">Login</a>
-                        <a href="../pages/register.html" class="btn btn-outline-light link-header outlined-button" aria-label="Link que redireciona para a página de cadastro">Cadastre-se</a>
+                        <a href="#" class="btn link-header" aria-label="Link que redireciona para o conteúdo geral da página"><img src="../assets/icon-user.svg" alt=""></a>
+                        <a href="../index.html" class="btn link-header">Sair</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -42,9 +41,8 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">Explore</a>
-                                <a href="../pages/login.html" class="nav-link active">Login</a>
-                                <a href="../pages/register.html" class="nav-link active">Cadastre-se</a>
+                                <a href="#" class="nav-link active">Meu perfil</a>
+                                <a href="../pages/register.html" class="nav-link">Sair</a>
                             </li>
                         </ul>
                     </div>
@@ -55,49 +53,181 @@
 
     <main>
         <section class="home">
-            <div class="content-home">
-                <h1>Pesquise pelos carros que
-                    deseja para filtrar os resultados </h1>
+            <h1>Encontre o carro ideal para o que você desejar</h1>
+            <div class="form-control-container">
+                <input class="form-control form-custom" type="text" placeholder="Busque seu carro aqui...">
+                <img src="../assets/zoom_in_24px.svg" alt="">
             </div>
         </section>
 
         <section class="menu-car">
-            <div class="box-container">
-                <div class="box">
-                    <img src="../assets/car05.webp" alt="">
-                    <h3>CHEVROLET ONIX<span>2018</span></h3>
-                    <div class="price">$ 820: 00</div>
-                    <a href="#" class="btn-custom-menu
-                     <a href="#" class="btn-custom-menu"> ver orçamento</a>
+            <div class="card-container">
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="../assets/car05.webp" alt="">
-                    <h3>CHEVROLET ONIX<span>2018</span></h3>
-                    <div class="price">$ 820: 00</div>
-                     <a href="#" class="btn-custom-menu"> ver orçamento</a>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="../assets/car05.webp" alt="">
-                    <h3>CHEVROLET ONIX<span>2018</span></h3>
-                    <div class="price">$ 820: 00</div>
-                     <a href="#" class="btn-custom-menu"> ver orçamento</a>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="../assets/car05.webp" alt="">
-                    <h3>CHEVROLET ONIX<span>2018</span></h3>
-                    <div class="price">$ 820: 00</div>
-                     <a href="#" class="btn-custom-menu"> ver orçamento</a>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="../assets/car05.webp" alt="">
-                    <h3>CHEVROLET ONIX<span>2018</span></h3>
-                    <div class="price">$ 820: 00</div>
-                     <a href="#" class="btn-custom-menu"> ver orçamento</a>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="../assets/car05.webp" alt="">
-                    <h3>CHEVROLET ONIX<span>2018</span></h3>
-                    <div class="price">$ 820: 00</div>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
+                </div><div class="card card-custom">
+                    <img src="../assets/img-cards-home.svg" alt="">
+                    <div class="card-body">
+                        <h3>CHEVROLET ONIX<span>2018</span></h3>
+                        <div class="about-car">1.0 TURBO FLEX PLUS LTZ MANUAL</div>
+                        <a href="#" class="btn-custom-menu
+                         <a href="#" class="btn-custom-menu">VER ORÇAMENTO</a>
+                         <hr>
+                         <div class="location">
+                             <i><img src="../assets/location_on_24px.svg" alt=""></i>
+                             <p class="location-card">ARACAJU - SE</p>
+                         </div>
+                    </div>
                 </div>
             </div>
         </section>
