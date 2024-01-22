@@ -51,7 +51,7 @@ Para configurar e executar o projeto, siga as instruções abaixo:
     node server.js
     ```
 
-OU Alternativamente, Utilize o Live Server:
+ou alternativamente, utilize o Live Server:
 Se preferir, você pode usar o Live Server para iniciar o projeto. Execute o comando npm start para iniciar o servidor JSON.
 
 npm start
@@ -60,6 +60,7 @@ npm start
 
 -   [Documentação da API utilizada](https://www.carqueryapi.com/documentation/api-usage/)
 -   <a href="https://www.figma.com/file/3dkSOTk5coLTWourll4mk3/FastCar?type=design&node-id=0-1&mode=design&t=c2F7lPcNXo9D4i4u-0">Figma</a>
+-   <a href="https://fast-car-s.vercel.app/">Deploy</a>
 
 ## Autores
 
