@@ -64,6 +64,7 @@ async function userRegister(event) {
 }
 
 
+
 async function login() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -75,9 +76,16 @@ async function login() {
 
     if (!user) {
         alert("Usuário ou senha inválidos");
-       
-    } else {
+    }
+
+    if (user && user.role !== "admin") {
         window.location.href = "../pages/home.html";
     }
+     else {
+        window.location.href = "../pages/home-admin.html";
+    }
 }
+
+
+
 
