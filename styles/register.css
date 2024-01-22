@@ -1,225 +1,186 @@
 @import url(../styles/global.css);
-
-.container {
-    position: absolute;
+main {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 4rem;
     background-color: var(--bg-color);
-    font-family: "Bebas Neue", sans-serif;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, var(--secondary-color) 15%, var(--bg-color));
 }
 
-.content {
-    background-color: var(--text-color-white);
-    border-radius: 15px;
-    width: 65rem;
-    height: 75%;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    border: 1px solid #1413132a;
-    margin-top: 4rem;
-}
-
-.content::before {
-    content: "";
-    position: absolute;
-    background: linear-gradient(to top, var(--primary-color) 50%, var(--secondary-color));
-    width: 40%;
-    height: 100%;
-    left: 0;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.logo {
-    max-width: 20%;
-    margin-bottom: 0.8rem;
-}
-
-.description {
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.description-second {
-    color: var(--primary-color);
-}
-
-.custom-button {
-    font-size: 1.2rem;
-    width: 98%;
-    cursor: pointer;
-    border-radius: 5px;
-    padding-block: 0.4rem 0.2rem;
-    margin: 0 auto;
-}
-
-.btn-second {
-    background-color: var(--primary-color);
-    color: var(--text-color-white);
-    transition: background-color 0.5s;
-}
-
-.btn-second:hover {
-    background-color: var(--accent-color);
-    color: var(--text-color-white);
-}
-
-.registration-content {
+.custom-container-register {
+    margin-top: 3rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 992px;
+    height: 70%;
+    max-height: 992px;
+    background: linear-gradient(to top, var(--primary-color) 50%, var(--secondary-color));
 }
 
-.registration-content .second-column {
-    z-index: 11;
-}
-
-.first-column .image-container {
-    max-width: 80%;
-}
-
-.first-column {
+.img-box {
+    width: calc(40% + 3rem);
+    margin-right: -3rem;
     display: flex;
     align-items: end;
-    justify-content: start;
-    height: fit-content;
-    width: 26rem;
-    height: 100%;
-    position: inherit;
+}
+
+.img-box img {
+    width: 100%;
+    position: relative;
 }
 
 .background {
-    width: 99.9%;
-    height: 30rem;
+    width: 100%;
+    height: 70%;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: start;
-
     background-image: url("../assets/bg01.webp");
     border-bottom-left-radius: 15px;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.image-container {
-    position: absolute;
-    height: fit-content;
-    min-width: 25rem;
-    bottom: 3rem;
-    right: -5rem;
-}
-
-.second-column {
+.form-box-register {
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.registration-form {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 0.8rem;
-    width: 65%;
+    flex-wrap: wrap;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.registration-form input {
-    font-size: 1.2rem;
+.form-box-register .logo {
+    width: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem
+}
+
+.form-box-register h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.form-box-register form {
+    margin: 2rem 0;
+}
+
+form .custom-input-group {
     width: 100%;
-    height: 32px;
-    background-color: #ecf0f1;
-    padding: 1.3rem 1rem;
-    border: none;
-    margin: 0;
-}
-
-.registration-label {
-    background-color: #ecf0f1;
     display: flex;
     align-items: center;
-    margin: 4px;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
-.second-content {
-    position: absolute;
+.custom-input-group input {
+    border-radius: 8px;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid var(--secondary-color);
+    font-size: 0.8rem;
+    transition: all 0.4s ease;
+    padding-inline-start: 0.7rem;
+}
+
+.custom-input-group input:focus {
+    border-color: var(--accent-color);
+}
+
+.custom-input-group button {
+    margin-top: 1rem;
+    width: 100%;
+    height: 4%;
+    background-color: var(--primary-color);
+    color: var(--text-color-white);
+    font-family: var(--heading-font-family);
+}
+
+.custom-input-group button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-white);
+}
+
+.links {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
 }
-
-.second-content .first-column {
-    order: 2;
-    z-index: -1;
-}
-
-.second-content .second-column {
-    order: 1;
-    z-index: -1;
-}
-
-a {
+.links .link {
+    font-family: var(--heading-font-family);
     text-decoration: none;
     color: var(--text-color);
-    font-size: 1.2rem;
-    display: flex;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 0 1rem;
 }
 
-@media screen and (max-width: 740px) {
-    .content {
-        width: 80%;
-        height: 70%;
+@media (max-width: 768px) {
+    main {
+        padding: 0;
+        background: var(--bg-color);
     }
-
-    .content::before {
+    .img-box {
+        display: none;
+    }
+    .custom-container-register {
         width: 100%;
-        height: 40%;
-        top: 0;
-        border-radius: 0;
+        height: 100%;
     }
-
-    .registration-content,
-    .second-content {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .first-column,
-    .second-column {
+    .form-box-register {
         width: 100%;
     }
 
-    .sign-in-js .content::before {
-        top: 60%;
-        left: 0;
-        border-radius: 0;
+    .form-box-register .logo {
+        width: 2rem;
+        margin-bottom: 0.5rem;
     }
 
-    .first-column .image-container {
-        max-width: 60%;
+    .form-box-register h1 {
+        font-size: 1rem;
     }
 
-    .registration-form {
-        width: 90%;
+    .custom-input-group input,
+    .custom-input-group button {
+        font-size: 0.8rem;
+    }
+    .links {
+        flex-wrap: wrap;
+        font-size: 0.3rem;
+        padding: 0;
     }
 
-    a {
-        font-size: 12px;
+    .links .link {
+        white-space: nowrap;
     }
-
-    .logo {
-        max-width: 10%;
+    .custom-container-register {
+        border-radius: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 50rem;
     }
 }
 
-@media screen and (max-width: 320px) {
-    .registration-form {
-        width: 100%;
-    }
-}
+/* @media (max-width: 480px){
+    main{
+       padding: 0 20rem;
+    background: var(--bg-color); 
+   }
+} */

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="FastCar, carros, veículos, automóveis, aluguel, locadora, usados, semi-novos">
+    <meta name="description" content="FastCar - Alugue automóveis de qualidade com rapidez.">
+    <meta name="author" content="Welton Santos, Jaíne Rodrigues, Matheus Medeiros">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kolker+Brush&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/home-admin.css">
+      <script src="../scripts/admin.js" defer></script>
+
+    <title>FastCar</title>
+</head>
+
+<body>
+    <div class="page-container page-custom" data-bs-spy="scroll" data-bs-target="navBar" tabindex="0">
+        <header>
+            <nav id="navBar" class="navbar fixed-top bg-menu" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a href="../index.html" class="navbar-brand custom-brand-nav"><img src="../assets/logo.svg" alt="Logomarca da FastCar, formada pelas letras F e C"></a>
+                    <div>
+                        <a href="#" class="btn link-header link-header-custom" aria-label="Link que redireciona para o conteúdo geral da página"><img src="../assets/icon-user.svg" alt=""></a>
+                        <a href="#" id="admin"class="btn link-header link-header-custom" aria-label="Link que redireciona para o a pagina de gerenciar usuários"><img src="../assets/admin.svg" alt=""></a>
+                        <a href="../index.html" class="btn link-header  link-header-custom">Sair</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end bg-off-canvas" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Meu perfil</a>
+                                <a href="#" class="nav-link active">Gerenciar usuários</a>
+                                <a href="../pages/register.html" class="nav-link">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <section class="container-admin">
+
+            <h1> Gerenciar usuários </h1>
+            <div class="card-container " id="card-container">
+
+                
+              <!-- Os cards serão preenchidos dinamicamente pela API -->
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <img src="../assets/logo.svg" alt="Logomarca da FastCar, formada pelas letras F e C" />
+        <ul>
+            <li><a href="#">Como funciona</a></li>
+            <li><a href="#">Destaques</a></li>
+            <li><a href="#">Parcerias</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Anuncie conosco</a></li>
+        </ul>
+    </footer>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
