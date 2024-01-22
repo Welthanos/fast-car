@@ -78,7 +78,7 @@ npm start
     </td>
      <td align="center">
       <img src="https://github.com/Welthanos.png?size=200" alt="Jaíne Rodrigues" />
-      <p><strong>Jaíne Rodrigues</strong></p>
+      <p><strong>Welton Santos</strong></p>
       <a href="https://github.com/Welthanos" style="text-decoration: none; margin-right: 5px;">
         <img src="https://img.shields.io/badge/GitHub-2d3436?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
       </a>
