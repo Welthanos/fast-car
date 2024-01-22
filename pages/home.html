@@ -67,16 +67,21 @@
             <section class="home">
                 <h1>Encontre o carro ideal para o que você desejar</h1>
                 <div class="form-control-container">
-                    <input class="form-control form-custom" type="text" placeholder="Busque seu carro aqui..." />
-                    <button onclick="searchCars()">Pesquisar</button>
-
-                    <img src="../assets/zoom_in_24px.svg" alt="" />
+                    <select id="selectMarca" class="form-control form-custom">
+                        <option value="">Selecione a Marca</option>
+                        <!-- As opções da marca serão preenchidas dinamicamente pela API -->
+                    </select>
+                    <br />
+                    <select id="selectModelo" class="form-control form-custom">
+                        <option value="">Selecione o Modelo</option>
+                        <!-- As opções do modelo serão preenchidas dinamicamente pela API -->
+                    </select>
                 </div>
             </section>
 
             <section class="menu-car">
                 <div class="card-container" id="card-container">
-                  
+                  <!-- Os cards serão preenchidos dinamicamente pela API -->
                 </div>
             </section>
 

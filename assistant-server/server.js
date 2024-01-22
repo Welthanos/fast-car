@@ -4,13 +4,10 @@ const axios = require('axios');
 
 const app = express();
 
-// Defina o caminho para a raiz do seu projeto
 const rootPath = path.join(__dirname, '..');
 
-// Sirva arquivos estáticos da raiz do projeto
 app.use(express.static(rootPath));
 
-// Adicione uma rota para servir o HTML
 app.get('/', (req, res) => {
   res.sendFile(path.join(rootPath, 'pages', 'home.htm'));
 });
