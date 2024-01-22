@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.container-admin {
+    min-height: 65vh;
+}
+
 .container-admin .card-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(30rem, 1fr));
