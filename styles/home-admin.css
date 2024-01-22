@@ -1,11 +1,3 @@
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-}
-
 .container-admin h1 {
     color: var(--primary-color);
     font-size: 2rem;
@@ -45,15 +37,18 @@ main {
 .delete-button {
     margin-top: 1rem;
     display: inline-block;
-    padding: 1rem 1rem;
+    padding: 0.4rem 0;
     cursor: pointer;
     color: var(--bg-color);
     border-radius: 5px;
-    height: 2.5rem;
-    margin: 0.4rem 2rem;
+    margin: 0.4rem 4rem;
     background-color: var(--primary-color);
     color: var(--text-color-white);
     font-family: var(--heading-font-family);
+}
+
+.delete-button {
+    margin-bottom: 1.5rem;
 }
 
 .edit-button:hover,
