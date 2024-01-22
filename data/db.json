@@ -1,24 +1,17 @@
 {
   "users": [
     {
-      "id": "aad6",
-      "username": "jjj",
+      "username": "JAÍNE",
       "email": "Jainer469@gmail.com",
-      "password": "222"
+      "id": "aad6"
     },
     {
-      "username": "carolina",
-      "email": "celia@me.com1",
-      "id": "03d5"
-    },
-    {
-      "id": "ef1e",
       "username": "jaine",
-      "email": "Jader@gmail.com",
-      "password": "123"
+      "email": "Jaine@gmail.com",
+      "id": "ef1e"
     },
     {
-      "username": "ana",
+      "username": "ana maria",
       "email": "carolina@gmail.com1",
       "id": "459f"
     },
@@ -28,29 +21,30 @@
       "id": "0b34"
     },
     {
-      "id": "77c4",
-      "username": "aaa",
+      "username": "ana maria",
       "email": "Jainea901@gmail.com",
-      "password": "22"
+      "id": "77c4"
     },
     {
-      "id": "4f00",
       "username": "aaa",
       "email": "casacBahia@gmail.com1",
-      "password": "123"
+      "id": "4f00"
     },
     {
-      "id": "44f7",
-      "username": "ddddd",
-      "email": "dddd@gmail.com",
-      "password": "1111",
-      "role": "comum"
+      "username": "teste",
+      "email": "teste@gmail.com",
+      "id": "44f7"
     },
     {
+      "username": "jaineAdmin",
+      "email": "admin@gmail.com",
       "id": "e632",
-      "username": "ddddd",
-      "email": "deede@gmail.com",
-      "password": "12223",
+      "role": "admin"
+    },
+    {
+      "username": "nataliaAdmin",
+      "email": "natalia@gmail.com",
+      "id": "e632",
       "role": "admin"
     }
   ]

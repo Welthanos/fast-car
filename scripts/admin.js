@@ -1,12 +1,11 @@
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     listarUsuarios();
     document.getElementById("card-container").addEventListener("click", (event) => {
         const target = event.target;
-        if (target.tagName === 'BUTTON' && target.classList.contains('edit-button')) {
+        if (target.tagName === "BUTTON" && target.classList.contains("edit-button")) {
             const userId = target.dataset.userId;
             editarUsuario(userId);
-        } else if (target.tagName === 'BUTTON' && target.classList.contains('delete-button')) {
+        } else if (target.tagName === "BUTTON" && target.classList.contains("delete-button")) {
             const userId = target.dataset.userId;
             excluirUsuario(userId);
         }
@@ -22,7 +21,8 @@ async function listarUsuarios() {
 
         cardContainer.innerHTML = "";
 
-        users.forEach(user => {
+        users.forEach((user) => {
+            // if(user.role === 'admin'){ QUANDO FILTRA O USUÁRIO, A EDIÇÃO NÃO FUNCIONA CORRETAMENTE
             const card = document.createElement("div");
             card.classList.add("card");
 
@@ -35,8 +35,8 @@ async function listarUsuarios() {
             `;
 
             cardContainer.appendChild(card);
+            // }
         });
-
     } catch (error) {
         console.error("Erro ao obter a lista de usuários:", error);
     }
@@ -56,11 +56,11 @@ async function editarUsuario(userId) {
         }
 
         const respostaAtualizacao = await fetch(`http://localhost:3000/users/${userId}`, {
-            method: 'PUT',
+            method: "PUT",
             headers: {
-                'Content-Type': 'application/json',
+                "Content-Type": "application/json"
             },
-            body: JSON.stringify({ username: novoUsername, email: novoEmail }),
+            body: JSON.stringify({ username: novoUsername, email: novoEmail })
         });
 
         if (respostaAtualizacao.ok) {
@@ -74,9 +74,6 @@ async function editarUsuario(userId) {
     }
 }
 
-
-
-
 async function excluirUsuario(userId) {
     try {
         const confirmacao = confirm("Tem certeza de que deseja excluir este usuário?");
@@ -86,7 +83,7 @@ async function excluirUsuario(userId) {
         }
 
         const respostaExclusao = await fetch(`http://localhost:3000/users/${userId}`, {
-            method: 'DELETE',
+            method: "DELETE"
         });
 
         if (respostaExclusao.ok) {
@@ -99,9 +96,6 @@ async function excluirUsuario(userId) {
         console.error("Erro ao excluir usuário:", error);
     }
 }
-
-
-
 
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
