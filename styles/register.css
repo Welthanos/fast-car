@@ -17,7 +17,10 @@ main {
     border-bottom-right-radius: 5px;
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 80%;
+    max-width: 992px;
+    height: 70%;
+    max-height: 992px;
     background: linear-gradient(to top, var(--primary-color) 50%, var(--secondary-color));
 }
 
@@ -62,7 +65,7 @@ main {
 .form-box-register .logo {
     width: 4rem;
     margin-bottom: 1rem;
-    margin-top: 0.8rem
+    margin-top: 2rem
 }
 
 .form-box-register h1 {

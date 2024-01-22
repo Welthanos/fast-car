@@ -390,3 +390,64 @@
         }
     }
 }
+
+@media (max-width: 720px) {
+    .banner-section {
+        h1 {
+            font-size: min(5rem);
+        }
+
+        a {
+            padding: 0.4rem 0.6rem;
+            font-size: 0.8rem;
+
+            img {
+                width: 1.15rem;
+                margin-left: 0.3rem;
+            }
+        }
+    }
+
+    .white-section,
+    .black-section {
+        gap: 0;
+    }
+
+    .white-section-1,
+    .white-section-2,
+    .black-section-1,
+    .black-section-2 {
+        gap: 2rem;
+
+        .text-container {
+            margin: 0 auto 2rem auto;
+
+            h3 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem
+            }
+        }
+
+        .car-container {
+            width: 100vw;
+            padding: 0;
+
+            .background {
+                min-height: 20rem;
+                height: 50%;
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .car {
+                width: 70%;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+    }
+}

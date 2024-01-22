@@ -16,7 +16,10 @@ main {
     border-bottom-right-radius: 5px;
     display: flex;
     flex-wrap: wrap;
-    width: 50rem;
+    width: 80%;
+    max-width: 992px;
+    height: 70%;
+    max-height: 992px;
     background: linear-gradient(to top, var(--primary-color) 50%, var(--secondary-color));
 }
 
@@ -61,6 +64,7 @@ main {
 .form-box .logo {
     width: 4rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 .form-box h1 {
@@ -119,7 +123,7 @@ form .custom-input-group {
     font-family: var(--heading-font-family);
     text-decoration: none;
     color: var(--text-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-top: 1rem;
     text-align: center;
     justify-content: center;
